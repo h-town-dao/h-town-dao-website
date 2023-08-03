@@ -4,12 +4,14 @@ import { info } from "@/data/data";
 export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <div className='w-full max-w-5xl items-center justify-between font-mono text-xl uppercase'>H-Town DAO</div>
-      <div className='w-full max-w-5xl items-center justify-between font-mono text-xl lg:flex w-full'>
-        <div>Mission Statement:</div>
+      <div className='w-full max-w-6xl text-white font-mono text-xl uppercase grid gap-5 lg:grid-cols-1'>
+        H-Town DAO
+      </div>
+      <div className='w-full max-w-6xl text-white font-mono text-xl grid gap-5 lg:grid-cols-2'>
+        <div className='text-left'>Mission Statement:</div>
         {info.mission_statement}
       </div>
-      <div className='flex flex-row max-w-5xl items-center justify-between font-mono text-xl lg:flex w-full'>
+      <div className='w-full max-w-6xl text-white font-mono text-xl grid gap-5 lg:grid-cols-2'>
         <div>How to Get involved:</div>
         <ul>
           <li>

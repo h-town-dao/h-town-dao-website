@@ -16,24 +16,28 @@ export default function Home() {
         <ul>
           <li>
             Follow us on{" "}
-            <a className='text-blue-500' href='https://www.instagram.com/htxweb3/'>
+            <a className='text-blue-500' href={info.instagram_link}>
               Instagram
+            </a>{" "}
+            and{" "}
+            <a className='text-blue-500' href={info.twitter_link}>
+              Twitter
             </a>
           </li>
           <li>
             Attend our{" "}
-            <a className='text-blue-500' href='https://www.meetup.com/houstonethereum/'>
+            <a className='text-blue-500' href={info.ethereum_meetup_link}>
               Ethereum
             </a>{" "}
             and{" "}
-            <a className='text-blue-500' href='https://www.meetup.com/htownweb3/'>
+            <a className='text-blue-500' href={info.web3_meetup_link}>
               Web3
             </a>{" "}
             Meetups
           </li>
           <li>
             Contribute to our open-source project on{" "}
-            <a className='text-blue-500' href='https://github.com/h-town-dao'>
+            <a className='text-blue-500' href={info.github_link}>
               Github
             </a>{" "}
           </li>

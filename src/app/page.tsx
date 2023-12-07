@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { info } from "@/data/data";
+import Header from "@/components/Header";
 
 export default function Home() {
   const create_link = (name: string, link: string) => {
@@ -13,7 +14,7 @@ export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between p-10 lg:p-24 '>
       <div className='w-full max-w-6xl text-white font-mono text-xl uppercase grid gap-5 lg:grid-cols-1'>
-        H-Town DAO
+        <Header />
       </div>
       <div className='w-full max-w-6xl text-white font-mono text-xl grid gap-5 lg:grid-cols-2'>
         <div className='text-left'>Mission Statement:</div>

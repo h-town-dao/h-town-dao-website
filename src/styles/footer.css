@@ -1,0 +1,4 @@
+.footer {
+  @apply text-xl uppercase text-white text-center;
+  @apply bg-yellow-500;
+}

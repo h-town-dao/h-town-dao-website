@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  background-color: black;
+body {
+  @apply bg-black text-white;
+}
+
+.frame {
+  @apply max-w-7xl mx-auto h-screen;
+  @apply p-10;
 }

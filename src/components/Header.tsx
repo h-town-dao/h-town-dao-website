@@ -1,58 +1,66 @@
+// ./src/components/header.tsx
+
 "use client";
+
+import "@/styles/header.css";
 
 import Link from "next/link";
 import React, { useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 
-import { info } from "@/data/data";
+interface MenuItemProps {
+  tag: string;
+  link: string;
+}
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const MenuItem: React.FC<MenuItemProps> = ({ tag, link }) => {
+  return (
+    <div className='menu-item'>
+      <Link href={link}>{tag}</Link>
+    </div>
+  );
+};
+
+const Header: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const styling =
-    "m-1 p-1 rounded text-xl lg:block lg:pr-2 text-center hover:cursor-pointer hover:bg-white hover:text-black";
-
-  const MenuItem = ({ tag, link }: { tag: string; link: string }) => {
-    return (
-      <div className={`${menuOpen ? "block" : "hidden"} ${styling}`} onClick={toggleMenu}>
-        <Link href={link}>{tag}</Link>
-      </div>
-    );
-  };
-
   return (
-    <div className='grid gap-5 lg:gap-20 grid-cols-2'>
-      <div className='lg:flex-grow lg:justify-self-start '>
+    <div className='header'>
+      <div className='flex justify-between w-full mx-auto'>
         <Link href='/'>
-          <div className='font-raleway text-4xl uppercase'>
+          <div className='logo'>
             <div>h-town dao</div>
           </div>
         </Link>
-      </div>
-      <div className='justify-self-end lg:hidden'>
-        <span
-          className='text-2xl text-center text-white rounded-lg cursor-pointer'
-          onClick={toggleMenu}
-          onMouseDown={(e) => e.preventDefault()} // Add this line
-        >
-          {menuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
-        </span>
-      </div>
-      <div className='lg:flex lg:justify-self-end pb-5'>
-        <MenuItem tag='About Us' link='/about-us' />
-        <MenuItem tag='Schedule' link='/portfolio' />
-        {/* <MenuItem tag='Resources' link='/resources' /> */}
-        {/* <div className={`${menuOpen ? "block" : "hidden"} ${styling}`}>
-          <Link href={info.forms.consultancy_request} target='_blank' rel='noopener noreferrer'>
-            Contact
-          </Link>
-        </div> */}
-        <MenuItem tag='Contact' link='/contact' />
-        {/* </div> */}
+
+        <div className='lg:hidden'>
+          <span className='text-2xl cursor-pointer' onClick={toggleMenu} onMouseDown={(e) => e.preventDefault()}>
+            {menuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
+          </span>
+        </div>
+
+        {/* Conditionally render this div based on menuOpen state */}
+        {menuOpen && (
+          <div className='right flex flex-col gap-5'>
+            <MenuItem tag='About Us' link='/about-us' />
+            <MenuItem tag='Schedule' link='/schedule' />
+            <MenuItem tag='Contact' link='/contact' />
+          </div>
+        )}
+
+        {/* Always visible on larger screens */}
+        <div className='menu-container'>
+          {/* Always visible on larger screens */}
+          <div className='hidden right lg:flex gap-5'>
+            <MenuItem tag='About Us' link='/about-us' />
+            <MenuItem tag='Schedule' link='/schedule' />
+            <MenuItem tag='Contact' link='/contact' />
+          </div>
+        </div>
       </div>
     </div>
   );

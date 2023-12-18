@@ -25,12 +25,12 @@ export default function Home() {
         <div className='grid lg:grid-cols-2'>
           <div>How to Get involved:</div>
           <ul>
-            <li>Follow us on {create_link("Instagram", info.instagram_link)}</li>
+            <li>Follow us on {create_link("Instagram", info.links.instagram_link)}</li>
             <li>
-              Attend our {create_link("Ethereum", info.ethereum_meetup_link)} and{" "}
-              {create_link("Web3", info.web3_meetup_link)} Meetups
+              Attend our {create_link("Web3", info.links.web3_meetup_link)} and{" "}
+              {create_link("Ethereum", info.links.ethereum_meetup_link)} Meetups
             </li>
-            <li>Contribute to our open-source project on {create_link("Github", info.github_link)}</li>
+            <li>Contribute to our open-source project on {create_link("Github", info.links.github_link)}</li>
           </ul>
         </div>
       </div>

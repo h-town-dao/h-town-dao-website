@@ -52,7 +52,7 @@ const Header: React.FC = () => {
 
         {/* Conditionally render this div based on menuOpen state */}
         {menuOpen && (
-          <div className='lg:hidden flex flex-col absolute top-full left-0 w-full border-solid border-2'>
+          <div className='lg:hidden flex flex-col absolute top-full left-0 w-full border-solid border-2 bg-black'>
             <MenuItem tag='About Us' link='/about-us' />
             <MenuItem tag='Schedule' link='/schedule' />
             <MenuItem tag='Contact' link='/contact' />

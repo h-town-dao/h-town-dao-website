@@ -22,18 +22,16 @@ const Header: React.FC = () => {
 
   const MenuItem: React.FC<MenuItemProps> = ({ tag, link }) => {
     return (
-      <div className='menu-item'>
-        <Link onClick={toggleMenu} href={link}>
-          {tag}
-        </Link>
-      </div>
+      <Link className='menu-item' onClick={toggleMenu} href={link}>
+        {tag}
+      </Link>
     );
   };
 
   return (
     <div className='header flex flex-col'>
       <div className='flex justify-between items-center w-full mx-auto p-4 relative'>
-        <Link className='logo' href='/'>
+        <Link onClick={toggleMenu} className='logo' href='/'>
           <div>h-town dao</div>
         </Link>
 

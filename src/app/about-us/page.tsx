@@ -3,14 +3,52 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className=''>
-      <div className='flex text-3xl pt-10 justify-center'>About Us</div>
-      <div className='pt-5'>
-        <div className='lg:grid grid-cols-2 gap-5'>
-          <div className=''></div>
-          <div className=''></div>
-        </div>
-      </div>
+    <div className='p-6 shadow-lg rounded-lg'>
+      <h2 className='text-2xl font-bold mb-4'>About Us</h2>
+
+      <h3 className='text-xl font-semibold mb-2'>Our Mission</h3>
+      <p className='mb-4'>
+        H-Town DAO stands at the forefront of fostering Web3 innovation in Houston. We are a pioneering decentralized
+        autonomous organization (DAO) established with a vision akin to a chamber of commerce, dedicated to nurturing
+        the growth and development of the Web3 ecosystem in the vibrant city of Houston.
+      </p>
+
+      <h3 className='text-xl font-semibold mb-2'>What We Do</h3>
+      <ul className='list-disc list-inside mb-4'>
+        <li>
+          <strong>Community Building</strong>: Bringing together a diverse group of Web3 enthusiasts, developers,
+          entrepreneurs, and thought leaders.
+        </li>
+        <li>
+          <strong>Educational Initiatives</strong>: Democratizing knowledge about blockchain, cryptocurrencies, NFTs,
+          and other Web3 technologies.
+        </li>
+        <li>
+          <strong>Facilitating Panels and Events</strong>: Organizing high-impact panels, discussions, and networking
+          events.
+        </li>
+        <li>
+          <strong>Supporting Startups and Projects</strong>: Providing resources and networking opportunities to budding
+          Web3 startups.
+        </li>
+        <li>
+          <strong>Advocacy and Policy Development</strong>: Engaging with policymakers to foster a conducive regulatory
+          environment.
+        </li>
+      </ul>
+
+      <h3 className='text-xl font-semibold mb-2'>Our Community</h3>
+      <p className='mb-4'>
+        We are a community of forward-thinkers, believers in the power of decentralized technology, and advocates for a
+        more inclusive digital future. Our members range from tech enthusiasts to seasoned entrepreneurs, all united by
+        a shared passion for the potential of Web3.
+      </p>
+
+      <h3 className='text-xl font-semibold mb-2'>Join Us</h3>
+      <p>
+        Whether you're a Web3 veteran or just beginning your journey, H-Town DAO welcomes you. Join us in shaping the
+        future of technology and commerce in Houston.
+      </p>
     </div>
   );
 };

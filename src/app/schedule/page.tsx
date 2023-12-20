@@ -6,9 +6,9 @@ const Schedule = () => {
     <div className=''>
       <div className='flex text-3xl pt-10 justify-center'>2024 Houston Web3 Schedule</div>
       <div className='pt-5'>
-        <div className='lg:grid grid-cols-2 gap-5'>
-          <div className=''>
-            <img src={info.schedule[202402].image}></img>
+        <div className='lg:grid grid-cols-2 gap-5 w-full'>
+          <div className='flex justify-center items-center'>
+            <img className='w-80 h-80' src={info.schedule[202402].image} />
           </div>
           <div className=''>
             <div className='text-3xl text-center'>Cartesi - Feb 12</div>
@@ -17,11 +17,11 @@ const Schedule = () => {
         </div>
         <br />
         <div className='lg:grid grid-cols-2 gap-5'>
-          <div className=''>
-            <img src={info.schedule[202403].image}></img>
+          <div className='flex justify-center items-center'>
+            <img className='w-80 h-80' src={info.schedule[202403].image} />
           </div>
           <div className=''>
-            <div className='text-3xl text-center'>Mining - Feb 12</div>
+            <div className='text-3xl text-center'>Mining - March 15</div>
             {info.schedule[202403].description}
           </div>
         </div>

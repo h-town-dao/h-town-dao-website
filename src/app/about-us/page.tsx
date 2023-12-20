@@ -46,8 +46,8 @@ const AboutUs = () => {
 
       <h3 className='text-xl font-semibold mb-2'>Join Us</h3>
       <p>
-        Whether you're a Web3 veteran or just beginning your journey, H-Town DAO welcomes you. Join us in shaping the
-        future of technology and commerce in Houston.
+        Whether you&#39;re a Web3 veteran or just beginning your journey, H-Town DAO welcomes you. Join us in shaping
+        the future of technology and commerce in Houston.
       </p>
     </div>
   );

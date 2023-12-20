@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className='p-6 shadow-lg rounded-lg'>
-      <h2 className='text-2xl font-bold mb-4'>About Us</h2>
+    <div className=''>
+      <div className='flex text-3xl pt-10 justify-center'>About Us</div>
 
       <h3 className='text-xl font-semibold mb-2'>Our Mission</h3>
       <p className='mb-4'>

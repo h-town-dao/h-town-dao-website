@@ -16,7 +16,7 @@ const info = {
       image: "/images/prater.jpg",
     },
     2024_03: {
-      title: "Mining - George Pate - Feb 15",
+      title: "Mining - George Pate - Mar 15",
       description:
         "George Pate is a highly motivated IT and cybersecurity professional with over 15 years of experience in both the private and public sectors. My expertise encompasses a wide range of areas, including cybersecurity initiatives, server hardware, OSINT, network management, software development, and more. I have a strong background in cloud technologies, such as AWS, Azure, and GCP, and I'm well-versed in IT asset management and Active Directory. Additionally, I have a diverse set of skills, including scripting in PowerShell, UNIX, C++, HTML, JavaScript, Python, and Bash. Outside of my professional life, I'm an enthusiast of various interests, such as micro green farming, ham radios, solar energy, and classic car restoration. I thrive on the synergy of technologies and constantly seek innovative solutions. My goal is to harness technology to create abundance and make a positive impact on the world. Hack the Planet!",
       image: "/images/pate.jpg",

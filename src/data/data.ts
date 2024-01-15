@@ -12,7 +12,7 @@ const info = {
     2024_02: {
       title: 'Cartesi - Zach Prater - Feb 19',
       description:
-        "Zach Prater is a key member of an Ecosystem Growth Team at Cartesi, specializing in organizing hackathons, overseeing grants, and linking startups with venture capitalists. Zac's engagement in the Web3 sector began in 2015, marking an exhilarating journey. With experience at several blockchain companies, Zac harbors ambitions to establish their own venture in the future.",
+        "Zach Prater is a key member of an Ecosystem Growth Team at Cartesi, specializing in organizing hackathons, overseeing grants, and linking startups with venture capitalists. Zach's engagement in the Web3 sector began in 2015, marking an exhilarating journey. With experience at several blockchain companies, Zach harbors ambitions to establish their own venture in the future.",
       image: '/images/prater.jpg',
     },
     2024_03: {

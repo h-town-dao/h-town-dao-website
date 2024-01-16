@@ -8,7 +8,6 @@ const info = {
   },
   mission_statement: "To unlock Houston's Web3 community potential",
   schedule: {
-    2024_01: { description: 'test', image: '/images/download.png' },
     2024_02: {
       title: 'Cartesi - Zach Prater - Feb 19',
       description:
@@ -23,7 +22,8 @@ const info = {
     },
     2024_04: {
       title: 'Oasis - Xi Zhang - April',
-      description: '',
+      description:
+        'I have been working as a software engineer for the past four years at Oasis Labs on data sovereignty projects in the web3 space. Recently, we released a confidential EVM called Sapphire. I think of privacy less as veil for secrets and more as a tool for propagating trust.',
       image: '/images/xi.jpg',
     },
     2024_05: {
@@ -37,12 +37,6 @@ const info = {
       description:
         'Sagar is a tech entrepreneur and software engineer with over 10 years of experience building enterprise systems across healthcare, fintech, logistics and supply chain. Some of his past projects include building AI agents for Web2 and Web3, trade finance platform for food importers, last-mile logistics platform in Africa, Fleet and Freight management platform for truckers, pre-surgery patient management system and algotrading system for a bank.',
       image: '/images/sagar.jpg',
-    },
-    2024_07: {
-      title: 'Security in AI - Sagar Shah - May',
-      description:
-        "George Pate is a highly motivated IT and cybersecurity professional with over 15 years of experience in both the private and public sectors. My expertise encompasses a wide range of areas, including cybersecurity initiatives, server hardware, OSINT, network management, software development, and more. I have a strong background in cloud technologies, such as AWS, Azure, and GCP, and I'm well-versed in IT asset management and Active Directory. Additionally, I have a diverse set of skills, including scripting in PowerShell, UNIX, C++, HTML, JavaScript, Python, and Bash. Outside of my professional life, I'm an enthusiast of various interests, such as micro green farming, ham radios, solar energy, and classic car restoration. I thrive on the synergy of technologies and constantly seek innovative solutions. My goal is to harness technology to create abundance and make a positive impact on the world. Hack the Planet!",
-      image: '/images/.jpg',
     },
   },
 };

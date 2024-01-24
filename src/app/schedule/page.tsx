@@ -9,9 +9,9 @@ type BioSectionProps = {
 
 const BioSection: React.FC<BioSectionProps> = ({ title, imageUrl, description }) => {
   return (
-    <div className="lg:grid grid-cols-2 gap-5 pb-5">
+    <div className="lg:grid grid-cols-2 gap-5 pb-10">
       <div className="flex justify-center items-center">
-        <img className="w-80 h-80 pb-5" src={imageUrl} alt="Bio Image" />
+        <img className="w-80 h-80 rounded-2xl" src={imageUrl} alt="Bio Image" />
       </div>
       <div className="">
         <div className="text-2xl text-center pb-5">{title}</div>

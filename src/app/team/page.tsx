@@ -5,7 +5,7 @@ type BioSectionProps = {
   title: string;
   imageUrl: string;
   description: string;
-  website: string;
+  website?: string;
 };
 
 const BioSection: React.FC<BioSectionProps> = ({ title, imageUrl, description, website }) => {

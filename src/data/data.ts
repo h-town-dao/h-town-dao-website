@@ -49,7 +49,7 @@ const info = {
     },
     margaret: {
       name: 'Margaret Passe',
-      bio: 'Margaret Passe is mathematician and finance professional with diverse background in auditing, compliance and regulatory fields which encompasses higher education, telecommunication as well as Web3 and quantum computing space. I’m currently the co-organizer of Houston Web3, AI and NFT community and the co-founder of the H-Town DAO. My current focus is to offer unparalleled and diversified Web3 education and networking opportunities to greater Houston community on blockchain technology and it’s far reaching applicability and adaptability. This focus extends to working with Ion District as well as local and state business and political leaders on positioning Houston’s talent to be prominent participant on the world’s blockchain stage.',
+      bio: 'Margaret Passe is mathematician and finance professional with diverse background in auditing, compliance and regulatory fields which encompasses higher education, telecommunication as well as Web3 and quantum computing space. She is currently the co-organizer of Houston Web3, AI and NFT community and contributor to the H-Town DAO. Her focus is to offer unparalleled and diversified Web3 education and networking opportunities to greater Houston community on blockchain technology and it’s far reaching applicability. This focus extends to working with Ion District as well as local and state business and political leaders on positioning Houston’s talent to be prominent participant on the world’s blockchain stage.',
       image: '/images/team/margaret.jpg',
     },
   },

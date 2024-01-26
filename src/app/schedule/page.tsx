@@ -23,7 +23,7 @@ const BioSection: React.FC<BioSectionProps> = ({ title, imageUrl, description })
 
 const Schedule = () => {
   return (
-    <div className="">
+    <div className="animate-fadeIn">
       <div className="flex text-3xl pt-10 justify-center">2024 Houston Web3 Schedule</div>
       <div className="pt-5 pb-5">
         <BioSection title={info.schedule[202402].title} imageUrl={info.schedule[202402].image} description={info.schedule[202402].description} />

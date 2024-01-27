@@ -62,7 +62,7 @@ const Schedule = () => {
       </div>
       {currentPage === '2023' && (
         <>
-          <div className="flex text-3xl pt-10 justify-center">2023 Houston Web3 Schedule</div>
+          <div className="flex text-3xl pt-10 justify-center">2023 Schedule</div>
           <div className="pt-5 pb-5">
             <BioSection title={info.schedule[2023_06].title} imageUrl={info.schedule[2023_06].image} description={info.schedule[2023_06].description} website={info.schedule[2023_06].website} />
           </div>
@@ -70,7 +70,7 @@ const Schedule = () => {
       )}
       {currentPage === '2024' && (
         <>
-          <div className="flex text-3xl pt-10 justify-center">2024 Houston Web3 Schedule</div>
+          <div className="flex text-3xl pt-10 justify-center">2024 Schedule</div>
           <div className="pt-5 pb-5">
             <BioSection title={info.schedule[2024_02].title} imageUrl={info.schedule[2024_02].image} description={info.schedule[2024_02].description} website={info.schedule[2024_02].website} />
             <BioSection title={info.schedule[2024_03].title} imageUrl={info.schedule[2024_03].image} description={info.schedule[2024_03].description} />

@@ -1,5 +1,8 @@
+'use client';
+
 import { info } from '@/data/data';
 import Image from 'next/image';
+import { useState } from 'react';
 
 type BioSectionProps = {
   title: string;
@@ -31,16 +34,52 @@ const BioSection: React.FC<BioSectionProps> = ({ title, imageUrl, description, w
 };
 
 const Schedule = () => {
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const [currentPage, setCurrentPage] = useState('2024');
+
+  const handleClick = (status: string) => {
+    setCurrentPage(status);
+    console.log(status);
+  };
+
+  const styling = 'm-1 p-1 rounded block text-center hover:cursor-pointer hover:bg-white hover:text-black';
+
   return (
     <div className="animate-fadeIn">
-      <div className="flex text-3xl pt-10 justify-center">2024 Houston Web3 Schedule</div>
-      <div className="pt-5 pb-5">
-        <BioSection title={info.schedule[2024_02].title} imageUrl={info.schedule[2024_02].image} description={info.schedule[2024_02].description} website={info.schedule[2024_02].website} />
-        <BioSection title={info.schedule[2024_03].title} imageUrl={info.schedule[2024_03].image} description={info.schedule[2024_03].description} />
-        <BioSection title={info.schedule[2024_04].title} imageUrl={info.schedule[2024_04].image} description={info.schedule[2024_04].description} />
-        <BioSection title={info.schedule[2024_05].title} imageUrl={info.schedule[2024_05].image} description={info.schedule[2024_05].description} website={info.schedule[2024_05].website} />
-        <BioSection title={info.schedule[2024_06].title} imageUrl={info.schedule[2024_06].image} description={info.schedule[2024_06].description} />
+      <div className="text-sm font-medium text-center border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+        <ul className="flex flex-wrap justify-end -mb-px">
+          <li className="mr-2">
+            <span className={styling} onClick={() => handleClick('2023')}>
+              2023
+            </span>
+          </li>
+          <li className="mr-2">
+            <span className={styling} aria-current="page" onClick={() => handleClick('2024')}>
+              2024
+            </span>
+          </li>
+        </ul>
       </div>
+      {currentPage === '2023' && (
+        <>
+          <div className="flex text-3xl pt-10 justify-center">2023 Houston Web3 Schedule</div>
+          <div className="pt-5 pb-5">
+            <BioSection title={info.schedule[2023_06].title} imageUrl={info.schedule[2023_06].image} description={info.schedule[2023_06].description} website={info.schedule[2023_06].website} />
+          </div>
+        </>
+      )}
+      {currentPage === '2024' && (
+        <>
+          <div className="flex text-3xl pt-10 justify-center">2024 Houston Web3 Schedule</div>
+          <div className="pt-5 pb-5">
+            <BioSection title={info.schedule[2024_02].title} imageUrl={info.schedule[2024_02].image} description={info.schedule[2024_02].description} website={info.schedule[2024_02].website} />
+            <BioSection title={info.schedule[2024_03].title} imageUrl={info.schedule[2024_03].image} description={info.schedule[2024_03].description} />
+            <BioSection title={info.schedule[2024_04].title} imageUrl={info.schedule[2024_04].image} description={info.schedule[2024_04].description} />
+            <BioSection title={info.schedule[2024_05].title} imageUrl={info.schedule[2024_05].image} description={info.schedule[2024_05].description} website={info.schedule[2024_05].website} />
+            <BioSection title={info.schedule[2024_06].title} imageUrl={info.schedule[2024_06].image} description={info.schedule[2024_06].description} />
+          </div>
+        </>
+      )}
     </div>
   );
 };

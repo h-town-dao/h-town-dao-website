@@ -8,6 +8,13 @@ const info = {
   },
   mission_statement: "To unlock Houston's Web3 community potential",
   schedule: {
+    2023_06: {
+      title: 'AWRE - Omar Ochoa - June and July',
+      description:
+        'J. Omar Ochoa is an artist with a diverse background, originally from Guerrero, Mexico, and now living in the United States. His artistic journey began in his early years, and over time, he developed a strong passion for various forms of art, including photography, design, printmaking, and painting.',
+      image: '/images/omar.jpg',
+      website: 'https://twitter.com/AWREDESIGN',
+    },
     2024_02: {
       title: 'Cartesi - Zach Prater - Feb 19',
       description:

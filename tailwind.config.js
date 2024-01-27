@@ -10,7 +10,7 @@ module.exports = {
         },
       },
       animation: {
-        fadeIn: 'fadeIn 2s ease-out',
+        fadeIn: 'fadeIn 3s ease-out',
       },
     },
   },

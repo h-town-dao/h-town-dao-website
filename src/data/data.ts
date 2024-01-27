@@ -13,6 +13,7 @@ const info = {
       description:
         "Zach Prater is a key member of an Ecosystem Growth Team at Cartesi, specializing in organizing hackathons, overseeing grants, and linking startups with venture capitalists. Zach's engagement in the Web3 sector began in 2015, marking an exhilarating journey. With experience at several blockchain companies, Zach harbors ambitions to establish his own venture in the future.",
       image: '/images/prater.jpg',
+      website: 'https://twitter.com/ZacPrater',
     },
     2024_03: {
       title: 'Mining - George Pate - Mar 15',
@@ -31,6 +32,7 @@ const info = {
       description:
         'Daniel Calderon-Arenas is an Mexican-born artist and educator from Houston, Texas. Daniel teaches courses on coding and digital processes at the K. G. McGovern College of the Arts and also has his own studio art practice. He currently writes generative art algorithms designed for the blockchain and has been exploring code-base creativity since 2016.',
       image: '/images/daniel.png',
+      website: 'https://twitter.com/DaCaldera',
     },
     2024_06: {
       title: 'AI - Sagar Shah - June',

@@ -46,6 +46,7 @@ const Header: React.FC = () => {
           <div className="hidden lg:flex gap-5">
             <MenuItem tag="About Us" link="/about-us" />
             <MenuItem tag="Schedule" link="/schedule" />
+            <MenuItem tag="Members" link="/members" />
             <MenuItem tag="Contributors" link="/contributors" />
           </div>
         </div>
@@ -55,6 +56,7 @@ const Header: React.FC = () => {
           <div className="lg:hidden flex flex-col absolute top-full left-0 w-full border-solid border-2 bg-black">
             <MenuItem tag="About Us" link="/about-us" />
             <MenuItem tag="Schedule" link="/schedule" />
+            <MenuItem tag="Members" link="/members" />
             <MenuItem tag="Contributors" link="/contributors" />
           </div>
         )}

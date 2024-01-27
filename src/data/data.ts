@@ -27,12 +27,14 @@ const info = {
       description:
         'George Pate is a highly motivated IT and cybersecurity professional with over 15 years of experience in both the private and public sectors. His expertise encompasses a wide range of areas, including but not limited to cybersecurity, server hardware, OSINT, network management and software development. He has a strong background in cloud technologies and is well-versed in IT asset management and Active Directory. Additionally, he has diverse set of skills, including scripting in PowerShell, UNIX, C++, HTML, JavaScript, Python, and Bash. Outside of his professional life, he is enthusiastic about micro green farming, ham radios, solar energy, and classic car restoration. He thrives on the synergy of technologies and constantly seeks innovative solutions. His goal is to harness technology to create abundance and make a positive impact on the world.',
       image: '/images/pate.jpg',
+      website: 'https://www.sp33dco.com/',
     },
     2024_04: {
       title: 'Oasis - Xi Zhang - April',
       description:
         'Xi Zhang has been working as a software engineer for the past four years at Oasis Labs on data sovereignty projects in the web3 space. Recently, Oasis released a confidential EVM called Sapphire. Xi thinks of privacy less as veil for secrets and more as a tool for propagating trust. Xi is a digital nomad who spends his time between Houston and Europe networking.',
       image: '/images/xi.jpg',
+      website: 'https://twitter.com/aefhm',
     },
     2024_05: {
       title: 'Generative Art - Daniel Calderon - May',
@@ -46,6 +48,7 @@ const info = {
       description:
         'Sagar Shah is a tech entrepreneur and software engineer with over 10 years of experience building enterprise systems across healthcare, fintech, logistics and supply chain. Some of his past projects include building AI agents for Web2 and Web3, trade finance platform for food importers, last-mile logistics platform in Africa, Fleet and Freight management platform for truckers, pre-surgery patient management system and algotrading system for a bank.',
       image: '/images/sagar.jpg',
+      website: 'https://sagarnileshshah.com/',
     },
   },
   team: {

@@ -5,7 +5,8 @@ const info = {
     ethereum_meetup_link: 'https://www.meetup.com/houstonethereum/',
     web3_meetup_link: 'https://www.meetup.com/htownweb3/',
     github_link: 'https://github.com/h-town-dao',
-    google_form: 'https://forms.gle/m1Wd5XqbzxZj46Zp9',
+    google_interest_form: 'https://forms.gle/m1Wd5XqbzxZj46Zp9',
+    google_speaker_form: 'https://forms.gle/m1Wd5XqbzxZj46Zp9',
   },
   mission_statement: "To unlock Houston's Web3 community potential",
   schedule: {

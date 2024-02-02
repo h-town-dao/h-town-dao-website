@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const AboutUs = () => {
   return (
-    <div className="animate-fadeIn">
+    <div className="animate-fadeIn pb-10">
       <div>
         <img className="rounded-2xl" src="./images/about-us/hack-night.jpg" alt="Bio Image" />
       </div>

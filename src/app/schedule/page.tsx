@@ -1,5 +1,6 @@
 'use client';
 
+import TableCalendar from '@/components/TableCalendar';
 import { info } from '@/data/data';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -35,7 +36,7 @@ const BioSection: React.FC<BioSectionProps> = ({ title, imageUrl, description, w
 
 const Schedule = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
-  const [currentPage, setCurrentPage] = useState('2024');
+  const [currentPage, setCurrentPage] = useState('calendar');
 
   const handleClick = (status: string) => {
     setCurrentPage(status);
@@ -58,8 +59,21 @@ const Schedule = () => {
               2024
             </span>
           </li>
+          <li className="mr-2">
+            <span className={styling} onClick={() => handleClick('calendar')}>
+              Calendar
+            </span>
+          </li>
         </ul>
       </div>
+      {currentPage === 'calendar' && (
+        <>
+          <div className="flex text-3xl pt-10 justify-center">Upcoming Events</div>
+          <div className="pt-5 pb-5">
+            <TableCalendar />
+          </div>
+        </>
+      )}
       {currentPage === '2023' && (
         <>
           <div className="flex text-3xl pt-10 justify-center">2023 Schedule</div>

@@ -23,7 +23,7 @@ export default function Home() {
       </div>
       <div className="font-mono">
         <div className="grid lg:grid-cols-2">
-          <div>How to Get involved:</div>
+          <div>How to get involved:</div>
           <ul>
             <li>Follow us on {create_link('Instagram', info.links.instagram_link)}</li>
             <li>

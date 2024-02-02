@@ -49,8 +49,20 @@ const TableCalendar: React.FC = () => {
             <td className="border-r p-2">{event.date}</td>
             <td className="border-r p-2">{event.organizer}</td>
             <td className="border-r p-2">{event.location}</td>
-            <td className="border-r p-2 justify-center">{event.meetup && <button className="border text-black bg-white px-2 py-1 rounded mx-auto flex">Sign up</button>}</td>
-            <td className="p-2 justify-center">{event.eventbrite && <button className="border text-black bg-white px-2 py-1 rounded mx-auto flex">Sign up</button>}</td>
+            <td className="border-r p-2 justify-center">
+              {event.meetup && (
+                <button className="border text-black bg-white px-2 py-1 rounded mx-auto flex">
+                  <a href={event.meetup}>Sign up</a>
+                </button>
+              )}
+            </td>
+            <td className="p-2 justify-center">
+              {event.eventbrite && (
+                <button className="border text-black bg-white px-2 py-1 rounded mx-auto flex">
+                  <a href={event.eventbrite}>Sign up</a>
+                </button>
+              )}
+            </td>
           </tr>
         ))}
       </tbody>

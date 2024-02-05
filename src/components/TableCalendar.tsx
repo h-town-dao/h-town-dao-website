@@ -23,6 +23,7 @@ const TableCalendar: React.FC = () => {
         location: 'The Ion',
         meetup: 'https://www.meetup.com/houstonethereum/events/297081548/',
       },
+      { name: 'Building Community in AI', date: '2024-03-02', organizer: 'Global AI Bootcamp', location: 'Microsoft Technology Center' },
       //   { name: 'Product Development', date: '2024-01-15', organizer: 'Wade', location: 'Improving' },
       // ... more events
     ];
@@ -36,8 +37,8 @@ const TableCalendar: React.FC = () => {
         <tr className="border-b">
           <th className="border-r p-2">Event Name</th>
           <th className="border-r p-2">Date</th>
-          <th className="border-r p-2">Organizer</th>
-          <th className="border-r p-2">Location</th>
+          <th className="border-r p-2 hidden md:table-cell">Organizer</th>
+          <th className="border-r p-2 hidden md:table-cell">Location</th>
           <th className="border-r p-2">Meetup</th>
           <th className="p-2">Eventbrite</th>
         </tr>
@@ -47,8 +48,8 @@ const TableCalendar: React.FC = () => {
           <tr className="border-b" key={index}>
             <td className="border-r p-2">{event.name}</td>
             <td className="border-r p-2">{event.date}</td>
-            <td className="border-r p-2">{event.organizer}</td>
-            <td className="border-r p-2">{event.location}</td>
+            <td className="border-r p-2 hidden md:table-cell">{event.organizer}</td>
+            <td className="border-r p-2 hidden md:table-cell">{event.location}</td>
             <td className="border-r p-2 justify-center">
               {event.meetup && (
                 <a href={event.meetup}>

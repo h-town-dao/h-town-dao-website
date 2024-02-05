@@ -64,6 +64,11 @@ const Schedule = () => {
               Calendar
             </span>
           </li>
+          <li className="mr-2">
+            <span className={styling} onClick={() => handleClick('calendar')}>
+              Gated
+            </span>
+          </li>
         </ul>
       </div>
       {currentPage === 'calendar' && (

@@ -24,6 +24,7 @@ const TableCalendar: React.FC = () => {
         meetup: 'https://www.meetup.com/houstonethereum/events/297081548/',
       },
       { name: 'Building Community in AI', date: '2024-03-02', organizer: 'Global AI Bootcamp', location: 'Microsoft Technology Center' },
+      { name: 'HBA Monthly Meetup', date: '2024-02-07', organizer: 'Houston Blockchain Alliance', location: 'The Cannon', meetup: 'https://lu.ma/g16iw99l' },
       //   { name: 'Product Development', date: '2024-01-15', organizer: 'Wade', location: 'Improving' },
       // ... more events
     ];
@@ -39,7 +40,7 @@ const TableCalendar: React.FC = () => {
           <th className="border-r p-2">Date</th>
           <th className="border-r p-2 hidden md:table-cell">Organizer</th>
           <th className="border-r p-2 hidden md:table-cell">Location</th>
-          <th className="border-r p-2">Apply</th>
+          <th className="border-r p-2">Attend</th>
         </tr>
       </thead>
       <tbody>

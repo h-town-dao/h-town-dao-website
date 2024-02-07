@@ -38,10 +38,14 @@ const TableCalendar: React.FC = () => {
     mockEvents.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
     const filtered = mockEvents.filter((event) => {
       const eventDate = new Date(event.date);
-      eventDate.setHours(0, 0, 0, 0);
+      eventDate.setHours(eventDate.getHours() + 6);
+      console.log(eventDate);
 
       const currentDate = new Date();
       currentDate.setHours(0, 0, 0, 0);
+      console.log(currentDate);
+
+      console.log(eventDate >= currentDate);
 
       return eventDate >= currentDate;
     });

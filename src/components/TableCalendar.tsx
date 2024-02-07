@@ -21,7 +21,7 @@ const TableCalendar: React.FC = () => {
   useEffect(() => {
     const mockEvents: Event[] = [
       { name: 'Cartesi Breakdown', date: '2024-02-19', organizer: 'Web3', location: 'The Ion', meetup: 'https://www.meetup.com/htownweb3/events/298531554/' },
-      { name: 'Bitcoin Mining', date: '2024-03-15', organizer: 'Web3', location: 'The Pink House' },
+      { name: 'Security Token Mining', date: '2024-03-15', organizer: 'Web3', location: 'The Pink House' },
       {
         name: 'Intro to Zero Knowledge Proofs',
         date: '2023-11-29',
@@ -36,7 +36,7 @@ const TableCalendar: React.FC = () => {
       // ... more events
     ];
     mockEvents.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
-    const filtered = mockEvents.filter((event) => new Date(event.date) > new Date());
+    const filtered = mockEvents.filter((event) => new Date(event.date) >= new Date());
 
     setEvents(mockEvents);
     setFilteredEvents(filtered);

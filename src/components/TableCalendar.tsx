@@ -30,13 +30,21 @@ const TableCalendar: React.FC = () => {
         meetup: 'https://www.meetup.com/houstonethereum/events/297081548/',
       },
       { name: 'Building Community in AI', date: '2024-03-02', organizer: 'Global AI Bootcamp', location: 'Microsoft Technology Center' },
-      { name: 'HBA Monthly Meetup', date: '2024-02-08', organizer: 'Houston Blockchain Alliance', location: 'The Cannon', meetup: 'https://lu.ma/g16iw99l' },
+      { name: 'HBA Monthly Meetup', date: '2024-02-07', organizer: 'Houston Blockchain Alliance', location: 'The Cannon', meetup: 'https://lu.ma/g16iw99l' },
       { name: "Web3 Evolution: What's Coming Next?", date: '2024-04-15', organizer: 'Rocket Network', location: 'Post' },
       //   { name: 'Product Development', date: '2024-01-15', organizer: 'Wade', location: 'Improving' },
       // ... more events
     ];
     mockEvents.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
-    const filtered = mockEvents.filter((event) => new Date(event.date) >= new Date());
+    const filtered = mockEvents.filter((event) => {
+      const eventDate = new Date(event.date);
+      eventDate.setHours(0, 0, 0, 0);
+
+      const currentDate = new Date();
+      currentDate.setHours(0, 0, 0, 0);
+
+      return eventDate >= currentDate;
+    });
 
     setEvents(mockEvents);
     setFilteredEvents(filtered);

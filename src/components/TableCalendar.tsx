@@ -19,6 +19,14 @@ const TableCalendar: React.FC = () => {
     setFilterEnabled(!filterEnabled);
   };
 
+  function truncateText(text: string) {
+    if (text.length > 20) {
+      return text.substring(0, 20) + '...';
+    } else {
+      return text;
+    }
+  }
+
   useEffect(() => {
     const mockEvents: Event[] = event_info;
 
@@ -75,7 +83,7 @@ const TableCalendar: React.FC = () => {
               <td className="border-r p-2 justify-center">
                 {event.meetup && (
                   <a href={event.meetup}>
-                    <button className="border text-black bg-white px-2 py-1 rounded mx-auto flex">Sign up</button>
+                    <button className="border text-black bg-white px-2 py-1 rounded mx-auto flex">X</button>
                   </a>
                 )}
               </td>

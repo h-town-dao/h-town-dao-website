@@ -7,6 +7,13 @@ const event_info = [
     meetup: 'https://www.meetup.com/houstonethereum/events/297081548/',
   },
   { name: 'HBA Monthly Meetup', date: '02/07/24', organizer: 'Houston Blockchain Alliance', location: 'The Cannon', meetup: 'https://lu.ma/g16iw99l' },
+  {
+    name: 'TBC Networking Happy Hour',
+    date: '02/08/24',
+    organizer: 'Texas Blockchain Council',
+    location: 'Rodeo Goat',
+    meetup: 'https://www.eventbrite.com/e/2824-houston-networking-happy-hour-tickets-777058050547',
+  },
   { name: 'Cartesi Breakdown', date: '02/19/24', organizer: 'Web3', location: 'The Ion', meetup: 'https://www.meetup.com/htownweb3/events/298531554/' },
   { name: 'Security Token Mining', date: '03/15/24', organizer: 'Web3', location: 'The Pink House' },
   { name: 'Building Community in AI', date: '03/02/24', organizer: 'Global AI Bootcamp', location: 'Microsoft Technology Center' },

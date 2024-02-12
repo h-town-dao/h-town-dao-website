@@ -1,5 +1,8 @@
+'use client';
+
 import { info } from '@/data/data';
 import Image from 'next/image';
+import { useState } from 'react';
 
 type BioSectionProps = {
   title: string;
@@ -30,13 +33,50 @@ const BioSection: React.FC<BioSectionProps> = ({ title, imageUrl, description, w
   );
 };
 
+const styling = 'm-1 p-1 rounded block text-center hover:cursor-pointer hover:underline';
+
 const Schedule = () => {
+  const [currentPage, setCurrentPage] = useState('contributors');
+
+  const handleClick = (status: string) => {
+    setCurrentPage(status);
+    console.log(status);
+  };
+
   return (
-    <div className="animate-fadeIn">
-      <div className="flex text-3xl pt-10 justify-center">DAO Contributors</div>
-      <div className="pt-5 pb-5">
-        <BioSection title={info.team.giorgio.name} imageUrl={info.team.giorgio.image} description={info.team.giorgio.bio} website={info.team.giorgio.website} />
-        <BioSection title={info.team.margaret.name} imageUrl={info.team.margaret.image} description={info.team.margaret.bio} />
+    <div>
+      <div className="text-sm font-medium text-center border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+        <ul className="flex flex-wrap justify-end -mb-px">
+          <li className="mr-2">
+            <span className={styling} onClick={() => handleClick('contributors')}>
+              Contributors
+            </span>
+          </li>
+          <li className="mr-2">
+            <span className={styling} onClick={() => handleClick('supporters')}>
+              Supporters
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div className="animate-fadeIn">
+        {currentPage === 'contributors' && (
+          <>
+            <div className="flex text-3xl pt-10 justify-center">DAO Contributors</div>
+            <div className="pt-5 pb-5">
+              <BioSection title={info.team.giorgio.name} imageUrl={info.team.giorgio.image} description={info.team.giorgio.bio} website={info.team.giorgio.website} />
+              <BioSection title={info.team.margaret.name} imageUrl={info.team.margaret.image} description={info.team.margaret.bio} />
+            </div>
+          </>
+        )}
+        {currentPage === 'supporters' && (
+          <>
+            <div className="flex text-3xl pt-10 justify-center">DAO Supporters</div>
+            <div className="pt-5 pb-5">
+              <img src="/images/sponsors/bitangels.png" alt="" />
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

@@ -80,6 +80,11 @@ const Schedule = () => {
                 <img src="/images/sponsors/bitangels.png" alt="" className="object-contain" />
               </a>
             </div>
+            <div className="pt-5 pb-10 flex w-auto justify-center gap-5">
+              <a href="https://levelk.io/" target="_blank" rel="noopener noreferrer" className="flex justify-center w-1/2">
+                <img src="/images/sponsors/level_k.png" alt="LEVEL K" className="object-contain" />
+              </a>
+            </div>
           </>
         )}
       </div>

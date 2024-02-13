@@ -72,8 +72,13 @@ const Schedule = () => {
         {currentPage === 'supporters' && (
           <>
             <div className="flex text-3xl pt-10 justify-center">DAO Supporters</div>
-            <div className="pt-5 pb-5">
-              <img src="/images/sponsors/bitangels.png" alt="" />
+            <div className="pt-5 pb-5 flex w-auto justify-center gap-5">
+              <a href="https://spindletop.digital/" target="_blank" rel="noopener noreferrer" className="flex justify-center w-1/2">
+                <img src="/images/sponsors/spindletop.png" alt="" className="object-contain" />
+              </a>
+              <a href="https://bitangels.network/" target="_blank" rel="noopener noreferrer" className="flex justify-center w-1/2">
+                <img src="/images/sponsors/bitangels.png" alt="" className="object-contain" />
+              </a>
             </div>
           </>
         )}

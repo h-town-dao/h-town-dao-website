@@ -46,7 +46,7 @@ const Schedule = () => {
   const styling = 'm-1 p-1 rounded block text-center hover:cursor-pointer hover:bg-white hover:text-black';
 
   return (
-    <div className="animate-fadeIn">
+    <div>
       <div className="text-sm font-medium text-center border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
         <ul className="flex flex-wrap justify-end -mb-px">
           <li className="mr-2">
@@ -71,34 +71,36 @@ const Schedule = () => {
           </li>
         </ul>
       </div>
-      {currentPage === 'calendar' && (
-        <>
-          <div className="flex text-3xl pt-10 justify-center">Upcoming Events</div>
-          <div className="pt-5 pb-5">
-            <TableCalendar />
-          </div>
-        </>
-      )}
-      {currentPage === '2023' && (
-        <>
-          <div className="flex text-3xl pt-10 justify-center">2023 Schedule</div>
-          <div className="pt-5 pb-5">
-            <BioSection title={info.schedule[2023_06].title} imageUrl={info.schedule[2023_06].image} description={info.schedule[2023_06].description} website={info.schedule[2023_06].website} />
-          </div>
-        </>
-      )}
-      {currentPage === '2024' && (
-        <>
-          <div className="flex text-3xl pt-10 justify-center">2024 Schedule</div>
-          <div className="pt-5 pb-5">
-            <BioSection title={info.schedule[2024_02].title} imageUrl={info.schedule[2024_02].image} description={info.schedule[2024_02].description} website={info.schedule[2024_02].website} />
-            <BioSection title={info.schedule[2024_03].title} imageUrl={info.schedule[2024_03].image} description={info.schedule[2024_03].description} website={info.schedule[2024_03].website} />
-            <BioSection title={info.schedule[2024_04].title} imageUrl={info.schedule[2024_04].image} description={info.schedule[2024_04].description} website={info.schedule[2024_04].website} />
-            <BioSection title={info.schedule[2024_05].title} imageUrl={info.schedule[2024_05].image} description={info.schedule[2024_05].description} website={info.schedule[2024_05].website} />
-            <BioSection title={info.schedule[2024_06].title} imageUrl={info.schedule[2024_06].image} description={info.schedule[2024_06].description} website={info.schedule[2024_06].website} />
-          </div>
-        </>
-      )}
+      <div className="animate-fadeIn h-auto">
+        {currentPage === 'calendar' && (
+          <>
+            <div className="flex text-3xl pt-10 justify-center">Upcoming Events</div>
+            <div className="pt-5 pb-20">
+              <TableCalendar />
+            </div>
+          </>
+        )}
+        {currentPage === '2023' && (
+          <>
+            <div className="flex text-3xl pt-10 justify-center">2023 Schedule</div>
+            <div className="pt-5 pb-5">
+              <BioSection title={info.schedule[2023_06].title} imageUrl={info.schedule[2023_06].image} description={info.schedule[2023_06].description} website={info.schedule[2023_06].website} />
+            </div>
+          </>
+        )}
+        {currentPage === '2024' && (
+          <>
+            <div className="flex text-3xl pt-10 justify-center">2024 Schedule</div>
+            <div className="pt-5 pb-5">
+              <BioSection title={info.schedule[2024_02].title} imageUrl={info.schedule[2024_02].image} description={info.schedule[2024_02].description} website={info.schedule[2024_02].website} />
+              <BioSection title={info.schedule[2024_03].title} imageUrl={info.schedule[2024_03].image} description={info.schedule[2024_03].description} website={info.schedule[2024_03].website} />
+              <BioSection title={info.schedule[2024_04].title} imageUrl={info.schedule[2024_04].image} description={info.schedule[2024_04].description} website={info.schedule[2024_04].website} />
+              <BioSection title={info.schedule[2024_05].title} imageUrl={info.schedule[2024_05].image} description={info.schedule[2024_05].description} website={info.schedule[2024_05].website} />
+              <BioSection title={info.schedule[2024_06].title} imageUrl={info.schedule[2024_06].image} description={info.schedule[2024_06].description} website={info.schedule[2024_06].website} />
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 };

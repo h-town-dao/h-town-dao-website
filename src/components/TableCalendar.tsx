@@ -54,7 +54,7 @@ const TableCalendar: React.FC = () => {
 
   return (
     <div className="animate-fadeIn">
-      <div className="text-sm font-medium text-center border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+      <div className="text-sm font-medium text-center border-b border-gray-20">
         <ul className="flex flex-wrap justify-end -mb-px">
           <li className="mr-2">
             <span className={styling} onClick={() => toggleFilter()}>
@@ -82,8 +82,8 @@ const TableCalendar: React.FC = () => {
               <td className="border-r p-2 hidden md:table-cell">{event.location}</td>
               <td className="border-r p-2 justify-center">
                 {event.meetup && (
-                  <a href={event.meetup}>
-                    <button className="border text-black bg-white px-2 py-1 rounded mx-auto flex">X</button>
+                  <a href={event.meetup} target="_blank" rel="noopener noreferrer">
+                    <button className="border text-black bg-white px-2 rounded mx-auto flex">x</button>
                   </a>
                 )}
               </td>

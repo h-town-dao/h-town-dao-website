@@ -1,4 +1,5 @@
 .footer {
-  @apply text-xs uppercase text-gray-900 text-center;
-  @apply p-10;
+  @apply border-t border-gray-200;
+  @apply text-xs uppercase;
+  @apply pt-5 pb-5;
 }

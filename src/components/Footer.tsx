@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
       <div className="flex">
         <ul>
           <li>
-            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
           </li>
           <li>
             <Link href="/terms">Terms of Use</Link>

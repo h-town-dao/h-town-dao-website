@@ -29,7 +29,7 @@ export default function Home() {
             <li>
               Attend our {create_link('Web3', info.links.web3_meetup_link)} and {create_link('Ethereum', info.links.ethereum_meetup_link)} Meetups
             </li>
-            <li>Contribute to our open-source project on {create_link('Github', info.links.github_link)}</li>
+            <li>Contribute to our project on {create_link('Github', info.links.github_link)}</li>
             <li>Fill out the H-Town DAO interest {create_link('Form', info.links.google_interest_form)}</li>
             <li>Fill out Web3 speaker {create_link('Form', info.links.google_speaker_form)}</li>
           </ul>

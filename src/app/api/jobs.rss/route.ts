@@ -1,5 +1,4 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 import RSS from 'rss';
 import { job_info } from '../../../data/jobs'; // Adjust the path as necessary
 
@@ -24,13 +23,10 @@ async function getContent(baseUrl: string): Promise<string> {
   return feed.xml({ indent: true });
 }
 
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method !== 'GET') {
-    res.setHeader('Allow', ['GET']);
-    return res.status(405).end(`Method ${req.method} Not Allowed`);
-  }
-
-  const baseUrl = 'https://yourwebsite.com'; // Replace with your actual domain
+export async function GET(req: NextRequest, res: NextResponse) {
+  const url = new URL(req.url);
+  const origin = url.origin; // This gives you the host
+  const baseUrl = origin; // Replace with your actual domain
   const xml = await getContent(baseUrl);
 
   return new NextResponse(xml, {

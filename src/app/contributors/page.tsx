@@ -84,6 +84,9 @@ const Schedule = () => {
               <a href="https://levelk.io/" target="_blank" rel="noopener noreferrer" className="flex justify-center w-1/2">
                 <img src="/images/sponsors/level_k.png" alt="LEVEL K" className="object-contain" />
               </a>
+              <a href="https://www.rocketnetwork.ai/" target="_blank" rel="noopener noreferrer" className="flex justify-center w-1/2">
+                <img src="/images/sponsors/rocket_network.png" alt="" className="object-contain" />
+              </a>
             </div>
           </>
         )}

@@ -14,9 +14,6 @@ const Members = () => {
     console.log(status);
   };
 
-  const toggleFilter = () => {
-    setFilterEnabled(!filterEnabled);
-  };
   const styling = 'm-1 p-1 rounded block text-center hover:cursor-pointer hover:underline';
 
   return (

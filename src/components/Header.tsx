@@ -31,8 +31,8 @@ const Header: React.FC = () => {
   return (
     <div className="header flex flex-col">
       <div className="flex justify-between items-center w-full mx-auto p-4 relative">
-        <Link onClick={toggleMenu} className="logo" href="/">
-          <div>h-town dao</div>
+        <Link onClick={toggleMenu} className="lg:w-1/3 w-1/2" href="/">
+          <img src="/htowndao-logo.png" alt="" />
         </Link>
 
         <div className="flex items-center">

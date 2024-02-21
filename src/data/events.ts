@@ -23,7 +23,7 @@ const event_info = [
     location: 'Microsoft Technology Center',
     meetup: 'https://globalai.community/bootcamp/united-states-of-america-houston/',
   },
-  { name: 'Rollup With Cartesi - Hackathon', date: '03/04/24', organizer: 'Cartesi', location: 'Online', meetup: 'https://taikai.network/cartesi/hackathons/cartesi-online-hackathon-2024' },
+  { name: 'Rollup With Cartesi - Hackathon', date: '03/18/24', organizer: 'Cartesi', location: 'Online', meetup: 'https://taikai.network/cartesi/hackathons/cartesi-online-hackathon-2024' },
   { name: 'Breakdown of the Oasis Network', date: '04/10/24', organizer: 'Web3', location: 'TBA' },
   { name: "Web3 Evolution: What's Coming Next?", date: '04/20/24', organizer: 'Rocket Network', location: 'TBA' },
   { name: 'Introduction to Generative Art', date: '05/15/24', organizer: 'Web3', location: 'TBA' },

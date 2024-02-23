@@ -2,7 +2,7 @@ const info = {
   links: {
     instagram_link: 'https://www.instagram.com/htxweb3/',
     telegram_link: 'https://t.me/+hW6kVk9ztU0zYmRh',
-    twitter_link: 'https://twitter.com/htowndao163407',
+    twitter_link: 'https://twitter.com/h_town_dao',
     ethereum_meetup_link: 'https://www.meetup.com/houstonethereum/',
     web3_meetup_link: 'https://www.meetup.com/htownweb3/',
     github_link: 'https://github.com/h-town-dao',

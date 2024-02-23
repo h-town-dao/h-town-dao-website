@@ -27,6 +27,7 @@ const event_info = [
   { name: 'Breakdown of the Oasis Network', date: '04/10/24', organizer: 'Web3', location: 'TBA' },
   { name: "Web3 Evolution: What's Coming Next?", date: '04/20/24', organizer: 'Rocket Network', location: 'TBA' },
   { name: 'Introduction to Generative Art', date: '05/15/24', organizer: 'Web3', location: 'TBA' },
+  { name: 'Consensus', date: '05/29/24', organizer: 'Coindesk', location: 'Austin, TX', meetup: 'https://consensus2024.coindesk.com/' },
   { name: 'Innovations in AI', date: '06/15/24', organizer: 'Web3', location: 'TBA' },
 ];
 

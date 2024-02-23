@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         <a href={info.links.instagram_link} target="_blank" rel="noopener noreferrer">
           <img src="./instagram.svg" alt="instagram" className="max-w-7 max-h-7 mr-2" />
         </a>
-        <a className="" href={info.links.github_link} target="_blank" rel="noopener noreferrer">
+        <a className="" href={info.links.twitter_link} target="_blank" rel="noopener noreferrer">
           <img src="./x.png" alt="x twitter" className="max-w-7 max-h-7" />
         </a>
         <a className="" href={info.links.telegram_link} target="_blank" rel="noopener noreferrer">

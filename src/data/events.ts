@@ -15,7 +15,7 @@ const event_info = [
     meetup: 'https://www.eventbrite.com/e/2824-houston-networking-happy-hour-tickets-777058050547',
   },
   { name: 'Cartesi Breakdown', date: '02/19/24', organizer: 'Web3', location: 'The Ion', meetup: 'https://www.meetup.com/htownweb3/events/298531554/' },
-  { name: 'Security Token Mining', date: '03/15/24', organizer: 'Web3', location: 'The Ion' },
+  { name: 'Security Token Mining', date: '03/15/24', organizer: 'Web3', location: 'The Ion', meetup: 'https://www.meetup.com/htownweb3/events/299489008/' },
   {
     name: 'Building Community in AI',
     date: '03/02/24',

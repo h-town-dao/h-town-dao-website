@@ -31,7 +31,7 @@ const event_info = [
     location: 'Wells Fargo Plaza',
     meetup: 'https://ti.to/saastock/saastock-local-houston_ai-insight',
   },
-  { name: 'Breakdown of the Oasis Network', date: '04/10/24', organizer: 'Web3', location: 'TBA' },
+  { name: 'Breakdown of the Oasis Network', date: '04/10/24', organizer: 'Web3', location: 'The Ion', meetup: 'https://www.meetup.com/htownweb3/events/299881400/' },
   { name: "Web3 Evolution: What's Coming Next?", date: '04/20/24', organizer: 'Rocket Network', location: 'TBA' },
   { name: 'Embracing AI for Empowering Brand Marketing', date: '04/24/24', organizer: 'Joelle Choe', location: 'Sesh Coworking', meetup: 'https://seshcoworking.com/events/ai-marketing-brand-voice/' },
   { name: 'Introduction to Generative Art', date: '05/15/24', organizer: 'Web3', location: 'TBA' },

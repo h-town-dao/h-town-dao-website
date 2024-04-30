@@ -35,7 +35,7 @@ const event_info = [
   { name: 'Breakdown of the Oasis Network', date: '04/10/24', organizer: 'Web3', location: 'Sesh Coworking', meetup: 'https://www.meetup.com/htownweb3/events/299881400/' },
   { name: "Web3 Evolution: What's Coming Next?", date: '04/20/24', organizer: 'Rocket Network', location: 'TBA' },
   { name: 'Embracing AI for Empowering Brand Marketing', date: '04/24/24', organizer: 'Joelle Choe', location: 'Sesh Coworking', meetup: 'https://seshcoworking.com/events/ai-marketing-brand-voice/' },
-  { name: 'Introduction to Generative Art', date: '05/15/24', organizer: 'Web3', location: 'TBA' },
+  { name: 'Creative Coding: Generative Art', date: '05/20/24', organizer: 'Web3', location: 'The Pink Casa', meetup: 'https://lu.ma/s8e49cmg' },
   { name: 'Consensus', date: '05/29/24', organizer: 'Coindesk', location: 'Austin, TX', meetup: 'https://consensus2024.coindesk.com/' },
   { name: 'Innovations in AI', date: '06/15/24', organizer: 'Web3', location: 'TBA' },
 ];

@@ -47,11 +47,11 @@ const info = {
       website: 'https://twitter.com/DaCaldera',
     },
     2024_06: {
-      title: 'AI - Sagar Shah - June',
+      title: 'AI and Web3 - Giorgio Villani - June',
       description:
-        'Sagar Shah is a tech entrepreneur and software engineer with over 10 years of experience building enterprise systems across healthcare, fintech, logistics and supply chain. Some of his past projects include building AI agents for Web2 and Web3, trade finance platform for food importers, last-mile logistics platform in Africa, Fleet and Freight management platform for truckers, pre-surgery patient management system and algotrading system for a bank.',
-      image: '/images/schedule/sagar.jpg',
-      website: 'https://sagarnileshshah.com/',
+        'As the founder of Spindletop Digital, a cutting-edge software development company, Giorgio specializes in creating web3 applications and providing expert advice on web3-related matters. His innovative spirit has led him to co-found multiple web3 ventures, including Fair Bid, and he has played a pivotal role in tokenizing a prestigious Italian hotel on Lake Como.',
+      image: '/images/team/giorgio.jpg',
+      website: 'https://spindletop.digital',
     },
   },
   team: {

@@ -37,7 +37,7 @@ const event_info = [
   { name: 'Embracing AI for Empowering Brand Marketing', date: '04/24/24', organizer: 'Joelle Choe', location: 'Sesh Coworking', meetup: 'https://seshcoworking.com/events/ai-marketing-brand-voice/' },
   { name: 'Creative Coding: Generative Art', date: '05/20/24', organizer: 'Web3', location: 'The Pink Casa', meetup: 'https://lu.ma/s8e49cmg' },
   { name: 'Consensus', date: '05/29/24', organizer: 'Coindesk', location: 'Austin, TX', meetup: 'https://consensus2024.coindesk.com/' },
-  { name: 'Innovations in AI', date: '06/15/24', organizer: 'Web3', location: 'TBA' },
+  { name: 'Innovations in AI', date: '07/15/24', organizer: 'Web3', location: 'Sesh Coworking' },
 ];
 
 export { event_info };

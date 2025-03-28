@@ -65,7 +65,7 @@ const Schedule = () => {
             <div className="flex text-3xl pt-10 justify-center">DAO Contributors</div>
             <div className="pt-5 pb-5">
               <BioSection title={info.team.giorgio.name} imageUrl={info.team.giorgio.image} description={info.team.giorgio.bio} website={info.team.giorgio.website} />
-              <BioSection title={info.team.margaret.name} imageUrl={info.team.margaret.image} description={info.team.margaret.bio} />
+              {/* <BioSection title={info.team.margaret.name} imageUrl={info.team.margaret.image} description={info.team.margaret.bio} /> */}
             </div>
           </>
         )}

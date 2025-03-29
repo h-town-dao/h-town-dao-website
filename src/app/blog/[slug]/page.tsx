@@ -30,12 +30,13 @@ const BlogPost = () => {
         ← Back to Blog
       </Link>
       <article>
-        <div className="relative w-full h-[400px] mb-8 rounded-lg overflow-hidden">
+        <div className="relative h-[400px] mb-8 rounded-lg overflow-hidden">
           <Image
             src={post.image}
             alt={post.title}
-            fill
-            style={{ objectFit: 'cover' }}
+            width={1200}
+            height={600}
+            className="object-cover w-full h-full"
             priority
           />
         </div>
@@ -49,12 +50,13 @@ const BlogPost = () => {
             remarkPlugins={[remarkGfm]}
             components={{
               img: ({ node, ...props }) => (
-                <div className="relative w-full h-[400px] my-8">
+                <div className="relative h-[400px] my-8">
                   <Image
                     src={props.src || ''}
                     alt={props.alt || ''}
-                    fill
-                    style={{ objectFit: 'cover' }}
+                    width={1200}
+                    height={600}
+                    className="object-cover w-full h-full"
                   />
                 </div>
               ),

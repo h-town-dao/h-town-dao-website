@@ -15,5 +15,16 @@
 
 .menu-item {
   @apply m-1 p-1 rounded text-xl lg:block text-center;
-  @apply hover:cursor-pointer hover:bg-white hover:text-black;
+  @apply hover:cursor-pointer hover:bg-white hover:text-black transition-colors duration-200;
+  @apply lg:hover:bg-white lg:hover:text-black;
+  @apply lg:m-1 lg:p-1 lg:rounded;
+}
+
+/* Mobile menu specific styles */
+@media (max-width: 1023px) {
+  .menu-item {
+    @apply text-3xl font-light tracking-wider;
+    @apply hover:text-gray-300;
+    @apply p-4;
+  }
 }

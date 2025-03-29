@@ -19,8 +19,9 @@ const Blog = () => {
                 <Image
                   src={post.image}
                   alt={post.title}
-                  fill
-                  style={{ objectFit: 'cover' }}
+                  width={800}
+                  height={400}
+                  className="object-cover"
                   priority
                 />
               </div>

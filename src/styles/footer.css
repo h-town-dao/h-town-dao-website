@@ -1,5 +1,6 @@
 .footer {
   @apply border-t border-gray-200;
   @apply text-xs uppercase;
-  @apply pt-5 pb-5;
+  @apply mt-auto py-5;
+  @apply w-full;
 }

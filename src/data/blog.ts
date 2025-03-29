@@ -32,6 +32,6 @@ Houston can lead in decentralized identity, tokenized assets, and Web3-powered i
     date: '2024-03-15',
     author: 'H-Town DAO',
     slug: 'getting-started-with-web3',
-    image: '/blog/saas-web3.png'
+    image: '/images/blog/saas-web3.png'
   }
 ]; 

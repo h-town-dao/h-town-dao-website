@@ -7,6 +7,5 @@ body {
 }
 
 .frame {
-  @apply max-w-7xl mx-auto h-screen;
-  @apply p-10;
+  @apply max-w-7xl mx-auto w-full;
 }

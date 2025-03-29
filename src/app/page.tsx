@@ -13,18 +13,17 @@ export default function Home() {
   };
 
   return (
-    <main className="main flex-auto flex flex-col h-screen justify-around">
-      <div className=""></div>
-      <div className="font-mono">
-        <div className="grid lg:grid-cols-2">
-          <div>Mission Statement:</div>
-          {info.mission_statement}
+    <main className="main flex-auto flex flex-col items-center gap-24 py-24">
+      <div className="font-mono w-full">
+        <div className="grid lg:grid-cols-2 gap-4">
+          <div className="text-xl font-semibold">Mission Statement:</div>
+          <div>{info.mission_statement}</div>
         </div>
       </div>
-      <div className="font-mono">
-        <div className="grid lg:grid-cols-2">
-          <div>How to get involved:</div>
-          <ul>
+      <div className="font-mono w-full">
+        <div className="grid lg:grid-cols-2 gap-4">
+          <div className="text-xl font-semibold">How to get involved:</div>
+          <ul className="space-y-2">
             <li>Follow us on {create_link('Instagram', info.links.instagram_link)}</li>
             <li>
               Attend our {create_link('Web3', info.links.web3_meetup_link)} and {create_link('Ethereum', info.links.ethereum_meetup_link)} Meetups

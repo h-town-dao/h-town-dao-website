@@ -48,6 +48,7 @@ const Header: React.FC = () => {
             <MenuItem tag="Schedule" link="/schedule" />
             <MenuItem tag="Members" link="/members" />
             <MenuItem tag="Contributors" link="/contributors" />
+            <MenuItem tag="Blog" link="/blog" />
           </div>
         </div>
 
@@ -58,6 +59,7 @@ const Header: React.FC = () => {
             <MenuItem tag="Schedule" link="/schedule" />
             <MenuItem tag="Members" link="/members" />
             <MenuItem tag="Contributors" link="/contributors" />
+            <MenuItem tag="Blog" link="/blog" />
           </div>
         )}
       </div>

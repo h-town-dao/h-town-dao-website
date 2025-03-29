@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: '1',
     title: 'The King Is Dead, Long Live Web3: Houston’s Next Tech Frontier',
-    excerpt: 'Learn the basics of Web3 development and how to build your first decentralized application.',
+    excerpt: 'SaaS has long been the gold standard for tech startups, but Houston isn’t Silicon Valley—and that’s a strength...',
     content: `SaaS has long been the gold standard for tech startups, but Houston isn't Silicon Valley—and that's a strength. Instead of chasing the tail end of the SaaS wave, the city should embrace the next frontier: Web3 protocols. While SaaS companies struggle with shrinking margins and rising costs, Web3 aligns with Houston's core strengths and economic drivers.
 
 ## Why SaaS Is Yesterday's Playbook

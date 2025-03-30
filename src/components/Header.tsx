@@ -7,6 +7,7 @@ import '@/styles/header.css';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { RxCross1, RxHamburgerMenu } from 'react-icons/rx';
+import Image from 'next/image';
 
 interface MenuItemProps {
   tag: string;
@@ -32,7 +33,14 @@ const Header: React.FC = () => {
     <div className="header flex flex-col">
       <div className="flex justify-between items-center w-full mx-auto relative z-50">
         <Link onClick={menuOpen ? toggleMenu : undefined} className="lg:w-1/3 w-1/2" href="/">
-          <img src="/htowndao-logo.png" alt="" />
+          <Image 
+            src="/htowndao-logo.png" 
+            alt="H-Town DAO Logo"
+            width={400}
+            height={100}
+            priority
+            className="w-full h-auto"
+          />
         </Link>
 
         <div className="flex items-center">

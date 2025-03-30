@@ -29,7 +29,7 @@ SaaS is a saturated market with increasing customer acquisition costs, regulator
 
 ## The Opportunity Ahead
 Houston can lead in decentralized identity, tokenized assets, and Web3-powered industrial applications. The future isn't another SaaS startup trying to out-market Salesforce—it's Houston-native Web3 protocols transforming industries. The king is dead—long live the new one.`,
-    date: '2024-03-15',
+    date: '2025-03-28',
     author: 'H-Town DAO',
     slug: 'getting-started-with-web3',
     image: '/images/blog/saas-web3.png'

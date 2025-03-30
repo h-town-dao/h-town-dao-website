@@ -30,7 +30,7 @@ const BlogPost = () => {
         ← Back to Blog
       </Link>
       <article>
-        <div className="relative h-[400px] mb-8 rounded-lg overflow-hidden">
+        <div className="relative h-[400px] mb-8 rounded-lg ">
           <Image
             src={post.image}
             alt={post.title}

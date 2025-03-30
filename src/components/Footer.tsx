@@ -5,6 +5,7 @@ import { info } from '@/data/data';
 
 import Link from 'next/link';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
@@ -13,21 +14,21 @@ const Footer: React.FC = () => {
         <div>H-Town DAO © 2023</div>
         <div>All Rights Reserved</div>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-5 gap-1">
-        <a href={info.links.instagram_link} target="_blank" rel="noopener noreferrer">
-          <img src="./instagram.svg" alt="instagram" className="max-w-5 max-h-5 mr-2" />
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+        <a href={info.links.instagram_link} target="_blank" rel="noopener noreferrer" className="flex justify-center">
+          <Image src="/images/socials/instagram.svg" alt="Instagram" width={20} height={20} className="w-5 h-5" />
         </a>
-        <a className="" href={info.links.youtube_link} target="_blank" rel="noopener noreferrer">
-          <img src="./youtube.svg" alt="youtube" className="max-w-5 max-h-5 filter invert" />
+        <a href={info.links.youtube_link} target="_blank" rel="noopener noreferrer" className="flex justify-center">
+          <Image src="/images/socials/youtube.svg" alt="YouTube" width={20} height={20} className="w-5 h-5 brightness-0 invert" />
         </a>
-        <a className="" href={info.links.twitter_link} target="_blank" rel="noopener noreferrer">
-          <img src="./x.png" alt="x twitter" className="max-w-5 max-h-5" />
+        <a href={info.links.twitter_link} target="_blank" rel="noopener noreferrer" className="flex justify-center">
+          <Image src="/images/socials/x.png" alt="X (Twitter)" width={20} height={20} className="w-5 h-5" />
         </a>
-        <a className="" href={info.links.telegram_link} target="_blank" rel="noopener noreferrer">
-          <img src="./telegram.svg" alt="telegram" className="max-w-5 max-h-5 mr-2" />
+        <a href={info.links.telegram_link} target="_blank" rel="noopener noreferrer" className="flex justify-center">
+          <Image src="/images/socials/telegram.svg" alt="Telegram" width={20} height={20} className="w-5 h-5" />
         </a>
-        <a className="" href={info.links.github_link} target="_blank" rel="noopener noreferrer">
-          <img src="./github.svg" alt="github" className="max-w-5 max-h-5" />
+        <a href={info.links.github_link} target="_blank" rel="noopener noreferrer" className="flex justify-center">
+          <Image src="/images/socials/github.svg" alt="GitHub" width={20} height={20} className="w-5 h-5" />
         </a>
       </div>
       <div className="flex">

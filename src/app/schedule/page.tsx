@@ -16,7 +16,13 @@ const BioSection: React.FC<BioSectionProps> = ({ title, imageUrl, description, w
   return (
     <div className="lg:grid grid-cols-2 gap-5 pb-10">
       <div className="flex justify-center items-center pb-3">
-        <img className="w-80 h-80 rounded-2xl" src={imageUrl} alt="Bio Image" />
+        <Image
+          src={imageUrl}
+          alt={title}
+          width={320}
+          height={320}
+          className="w-80 h-80 rounded-2xl object-cover"
+        />
       </div>
       <div className="">
         <div className="text-2xl text-center pb-5">{title}</div>

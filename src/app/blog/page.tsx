@@ -15,13 +15,17 @@ const Blog = () => {
         {posts.map((post) => (
           <article key={post.id} className="border border-gray-700 rounded-lg p-6 hover:border-gray-500 transition-colors">
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="relative h-[250px] rounded-lg overflow-hidden">
+              <div className="flex justify-center items-center rounded-lg">
                 <Image
                   src={post.image}
                   alt={post.title}
                   width={800}
-                  height={400}
-                  className="object-cover"
+                  height={600}
+                  style={{
+                    width: 'auto',
+                    maxWidth: '100%',
+                    height: 'auto'
+                  }}
                   priority
                 />
               </div>

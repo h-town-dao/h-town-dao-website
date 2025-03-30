@@ -5,7 +5,14 @@ const AboutUs = () => {
   return (
     <div className="animate-fadeIn pb-10">
       <div className="pt-5">
-        <img className="rounded-2xl" src="./images/about-us/hack-night.jpg" alt="Bio Image" />
+        <Image
+          src="/images/about-us/hack-night.jpg"
+          alt="Hack Night"
+          width={1200}
+          height={675}
+          className="rounded-2xl w-full h-auto"
+          priority
+        />
       </div>
       <div>
         <div className="flex text-3xl pt-10 justify-center">About Us</div>

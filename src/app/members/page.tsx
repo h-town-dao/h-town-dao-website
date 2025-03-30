@@ -37,7 +37,14 @@ const Members = () => {
           <>
             <div className="flex text-3xl pt-10 justify-center">NFT Membership</div>
             <div className="pt-5 pb-5">
-              <img className=" rounded-2xl" src="/images/pages/coming_soon.webp" alt="coming soon" />
+              <Image 
+                src="/images/pages/coming_soon.webp" 
+                alt="Coming Soon" 
+                width={1200}
+                height={675}
+                className="rounded-2xl w-full h-auto"
+                priority
+              />
             </div>
           </>
         )}

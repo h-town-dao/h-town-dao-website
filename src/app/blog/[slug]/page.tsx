@@ -30,14 +30,12 @@ const BlogPost = () => {
         ← Back to Blog
       </Link>
       <article>
-        <div className="relative h-[400px] mb-8 rounded-lg overflow-hidden">
-          <Image
+        <div className="relative  mb-8 rounded-lg overflow-hidden">
+          <img
             src={post.image}
             alt={post.title}
             width={1200}
             height={600}
-            className="object-cover w-full h-full"
-            priority
           />
         </div>
         <div className="text-gray-400 text-sm mb-8">

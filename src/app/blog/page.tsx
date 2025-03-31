@@ -6,7 +6,9 @@ import Image from 'next/image';
 import { BlogPost, blogPosts } from '@/data/blog';
 
 const Blog = () => {
-  const [posts, setPosts] = useState<BlogPost[]>(blogPosts);
+  const [posts, setPosts] = useState<BlogPost[]>(
+    [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  );
 
   return (
     <div className="animate-fadeIn pb-20">

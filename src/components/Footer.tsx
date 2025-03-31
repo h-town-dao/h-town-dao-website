@@ -40,7 +40,6 @@ const Footer: React.FC = () => {
             <Link href="/terms">Terms of Use</Link>
           </li>
         </ul>
-        {/* Add more links as needed */}
       </div>
     </div>
   );

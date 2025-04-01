@@ -1,5 +1,21 @@
 import { Feed } from 'feed';
-import { blogPosts } from '@/data/blog';
+
+interface BlogPost {
+  id: string;
+  title: string;
+  slug: string;
+  author: string;
+  date: string;
+  image: string;
+  excerpt: string;
+  content: string;
+}
+
+interface BlogData {
+  blogPosts: BlogPost[];
+}
+
+const blogData = require('@/data/blog.json') as BlogData;
 
 const baseUrl = "https://htowndao.xyz";
 
@@ -21,7 +37,7 @@ export async function GET() {
   });
 
   // Add posts to feed
-  blogPosts
+  blogData.blogPosts
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .forEach(post => {
       const imageUrl = post.image.startsWith('http') ? post.image : `${baseUrl}${post.image}`;

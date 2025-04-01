@@ -1,71 +1,68 @@
-'use client';
-
-import { useParams } from 'next/navigation';
+import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import Image from 'next/image';
-import { blogPosts } from '@/data/blog';
+import blogData from '@/data/blog.json';
 
-const BlogPost = () => {
-  const params = useParams();
-  const slug = params.slug as string;
-  
-  const post = blogPosts.find(post => post.slug === slug);
+interface BlogPost {
+  id: string;
+  title: string;
+  content: string;
+  excerpt: string;
+  date: string;
+  author: string;
+  slug: string;
+  image: string;
+}
+
+interface Props {
+  params: {
+    slug: string;
+  };
+}
+
+export async function generateStaticParams() {
+  return blogData.blogPosts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
+export default function BlogPost({ params }: Props) {
+  const post = blogData.blogPosts.find((post) => post.slug === params.slug);
 
   if (!post) {
-    return (
-      <div className="animate-fadeIn text-center py-20">
-        <h1 className="text-3xl mb-4">Post Not Found</h1>
-        <Link href="/blog" className="text-blue-400 hover:text-blue-300">
-          ← Back to Blog
-        </Link>
-      </div>
-    );
+    notFound();
   }
 
   return (
-    <div className="animate-fadeIn max-w-4xl mx-auto py-10">
-      <Link href="/blog" className="text-blue-400 hover:text-blue-300 mb-8 inline-block">
-        ← Back to Blog
-      </Link>
-      <article>
-        <div className="relative  mb-8 rounded-lg overflow-hidden">
-          <img
+    <div className="animate-fadeIn pb-20">
+      <article className="max-w-4xl mx-auto pt-10">
+        <div className="mb-8">
+          <Image
             src={post.image}
             alt={post.title}
             width={1200}
-            height={600}
+            height={675}
+            className="rounded-2xl w-full h-auto"
+            priority
           />
         </div>
+        <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
         <div className="text-gray-400 text-sm mb-8">
           <span>{post.author}</span>
           <span className="mx-2">•</span>
           <span>{new Date(post.date).toLocaleDateString()}</span>
         </div>
         <div className="prose prose-invert max-w-none">
-          <ReactMarkdown 
-            remarkPlugins={[remarkGfm]}
-            components={{
-              img: ({ node, ...props }) => (
-                <div className="relative h-[400px] my-8">
-                  <Image
-                    src={props.src || ''}
-                    alt={props.alt || ''}
-                    width={1200}
-                    height={600}
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-              ),
-            }}
-          >
-            {post.content}
-          </ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
+        </div>
+        <div className="mt-8 pt-8 border-t border-gray-700">
+          <Link href="/blog" className="text-blue-400 hover:text-blue-300">
+            ← Back to Blog
+          </Link>
         </div>
       </article>
     </div>
   );
-};
-
-export default BlogPost; 
+} 

@@ -1,18 +1,37 @@
 'use client';
 
-import { useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
+import BlogPosts from './BlogPosts';
 import Link from 'next/link';
-import Image from 'next/image';
-import { BlogPost, blogPosts } from '@/data/blog';
 
-const Blog = () => {
-  const [posts, setPosts] = useState<BlogPost[]>(
-    [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-  );
+export default function Blog() {
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  useEffect(() => {
+    const checkAdmin = async () => {
+      try {
+        const token = process.env.NEXT_PUBLIC_ADMIN_TOKEN;
+        if (!token) return;
+
+        const response = await fetch('/api/auth/check-admin', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        const data = await response.json();
+        setIsAdmin(data.isAdmin);
+      } catch (error) {
+        console.error('Error checking admin status:', error);
+        setIsAdmin(false);
+      }
+    };
+
+    checkAdmin();
+  }, []);
 
   return (
     <div className="animate-fadeIn pb-20">
-      <div className="flex flex-col items-center gap-2 pt-10 mb-10">
+      <div className="flex flex-col items-center gap-4 pt-10 mb-10">
         <div className="flex items-center gap-2">
           <h1 className="text-3xl">Blog</h1>
           <a 
@@ -27,45 +46,18 @@ const Blog = () => {
             </svg>
           </a>
         </div>
+        {isAdmin && (
+          <Link 
+            href="/blog/create"
+            className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Create New Blog Post
+          </Link>
+        )}
       </div>
-      <div className="grid gap-8">
-        {posts.map((post) => (
-          <article key={post.id} className="border border-gray-700 rounded-lg p-6 hover:border-gray-500 transition-colors">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex justify-center items-center rounded-lg">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  width={800}
-                  height={600}
-                  style={{
-                    width: 'auto',
-                    maxWidth: '100%',
-                    height: 'auto'
-                  }}
-                  priority
-                />
-              </div>
-              <div>
-                <Link href={`/blog/${post.slug}`}>
-                  <h2 className="text-2xl font-semibold mb-2 hover:text-gray-300">{post.title}</h2>
-                </Link>
-                <div className="text-gray-400 text-sm mb-4">
-                  <span>{post.author}</span>
-                  <span className="mx-2">•</span>
-                  <span>{new Date(post.date).toLocaleDateString()}</span>
-                </div>
-                <p className="text-gray-300">{post.excerpt}</p>
-                <Link href={`/blog/${post.slug}`} className="inline-block mt-4 text-blue-400 hover:text-blue-300">
-                  Read more →
-                </Link>
-              </div>
-            </div>
-          </article>
-        ))}
-      </div>
+      <Suspense fallback={<div>Loading posts...</div>}>
+        <BlogPosts />
+      </Suspense>
     </div>
   );
-};
-
-export default Blog; 
+} 

@@ -21,26 +21,28 @@ export const metadata: Metadata = {
   keywords: 'Web3, DAO, Houston, Blockchain, Cryptocurrency, Community, Technology, Innovation',
   authors: [{ name: 'H-Town DAO' }],
   openGraph: {
-    title: 'H-Town DAO',
-    description: "To unlock Houston's Web3 community potential",
+    type: 'website',
     url: baseUrl,
     siteName: 'H-Town DAO',
+    title: 'H-Town DAO',
+    description: "To unlock Houston's Web3 community potential",
     images: [
       {
-        url: '/htowndao-logo.png',
-        width: 800,
+        url: '/images/meta/og-image.png',
+        width: 1200,
         height: 600,
-        alt: 'H-Town DAO Logo',
+        alt: 'H-Town DAO - Unlocking Houston\'s Web3 Community Potential',
       },
     ],
     locale: 'en_US',
-    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'H-Town DAO',
     description: "To unlock Houston's Web3 community potential",
-    images: ['/htowndao-logo.png'],
+    images: ['/images/meta/og-image.png'],
+    site: '@htowndao',
+    creator: '@htowndao',
   },
   robots: {
     index: true,
@@ -54,7 +56,11 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code', // You'll need to replace this with your actual verification code
+    google: 'your-google-verification-code',
+  },
+  other: {
+    'msapplication-TileColor': '#000000',
+    'theme-color': '#000000',
   },
 };
 

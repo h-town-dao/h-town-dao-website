@@ -67,6 +67,20 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N1DBF2FZH"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-5N1DBF2FZH');
+            `,
+          }}
+        />
+      </head>
       <body className={`${inter.className} min-h-full flex flex-col`}>
         <div className="frame flex flex-col flex-grow lg:pt-16 lg:px-16 p-6">
           <Header />
